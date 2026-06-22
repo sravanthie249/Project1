@@ -1,29 +1,29 @@
-                            Project-1
-                             Report 
+                                                    PROJECT-1
+                                                     REPORT
 Report on Creation of VPC and EC2 Instance in AWS
-Title:
-* Create of virtual private cloud (VPC) and EC2 instance in Amazon Web Services(AWS) and Connecting to Mobaxterm
-Objective:
+TITLE:
+* Creation of virtual private cloud (VPC) and EC2 instance in Amazon Web Services(AWS) and Connecting to Mobaxterm
+OBJECTIVE:
 * To create a Virtual Private Cloud(VPC)and launch an Amazon EC2 instance within the VPC for secure cloud computing.
-Requirements:
+REQUIRMENTS:
 * AWS Account
 * Internet Connection
-Steps to Create a VPC
-1.login in to the AWS Management Console.
-2.Search for VPC and open the VPC Dashboard.
-3.Click Create VPC .
-4.Select VPC only.
+Steps to Create a VPC:
+1.login in to the AWS Management Console
+2.Search for VPC and open the VPC Dashboard
+3.Click Create VPC 
+4.Select VPC only
 5.Enter:
     *Name: my VPC 
     *IPv4 CIDR Block:10.0.0.0./16
 6.Leave the remaining settings as default.
 7.Click create VPC.
-Steps to Launch on EC2 Instance
-1.Open the EC2 Dashboard.
-2.Click Launch Instance.
+Steps to Launch on EC2 Instance:
+1.Open the EC2 Dashboard
+2.Click Launch Instance
 3.Enter the Instance Name: My EC2.
 4.Select Amazon Machine Image(AMI)
-5.Instance type t2.micro(Free tier Eligible).
+5.Instance type t2.micro(Free tier Eligible)
 6.create or select key pair(AWS.Pem)
 7.Under Network Settings:
    *Select My VPC
@@ -43,11 +43,7 @@ Step 5:Configure SSH Connection
  *Check Specify Username
  *Enter(Ubuntu AMI)
  *Click Advance SSH Settings 
-
 Step 6:Select Key Pair
 Step 7:select .pem  key file
 Step 8:Connection Successfully
-
-
-
-
+CONCLUSION:In this project,we succesfully created a virtual private cloud(VPC)and launched an EC2 instance in AWS.We configured the required networking components,security groups,and key pairs to establish a secure cloud enviornment.The EC2 instance was connected using mobaXterm through SSH and python was installed and excuted successfully on the server.
