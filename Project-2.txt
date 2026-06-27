@@ -90,9 +90,6 @@ Security Groups control access.
 *High Scalability.
 *Reduced Configuration Errors.
 8. Result
-
 A VPC with Public and Private Subnets was successfully created. EC2 instances were launched using Launch Templates. Public instances were accessible from the internet, while private resources remained isolated and secure.
-
 9. Conclusion
-
 The project successfully implemented a secure AWS network architecture using VPC, Public and Private Subnets, and EC2 Launch Templates. This architecture provides improved security, scalability, and efficient resource management suitable for enterprise cloud environment.
