@@ -1,0 +1,98 @@
+                               PROJECT-2
+                            RESEARCH DOCUMENT
+TITLE:
+Implementation of Private and Public subnet Architecture using AWS VPC and EC2 Launch Template
+ADSTRACT
+This project demonstrations the creation of a secure AWS network infrastructure using a Virtual Private Cloud (VPC)
+with Public and Private Subnets. The Public-facing resources are deployed in the Public Subnet, While sensitive resource are placed in the Private Subnet to improve security and network management.
+OBJECTIVES
+*Create a custom VPC in AWS.
+*Configur4e Public and Private Subnets.
+*Enable internet connectivity through an Internet Gateway.
+*Launch EC2 instances using a Launch Template.
+*Implement secure network communication.
+*Understand AWS networking concepts and deployment automation.
+TOOLS AND SERVICE USED
+*Amazon VPC
+*Amazon EC2
+*Launch Template
+*Internet Gateway (IGW)
+*Route Tables
+*Security Groups
+*AWS Management Console
+ARCHITECTURE OVERVIEW
+Components
+VPC 
+*CIDR Block10.0.0.0/16
+Public Subnet
+*CIDR:10.0.2.0/24
+*Contain Application/Database Server
+*No Direct Internet Access
+Private Subnet
+*CIDR: 10.0.2.0/24
+*Contains Application/Database Server
+*No Direct Internet Access
+Internet Gateway
+* Provide instance connection to Public Subnet
+LAUNCH TEMPLATE
+*Stores EC2 configuration settings.
+*Used for consistent instance deployment.
+. Implementation Steps
+Step 1: Create VPC
+*Open AWS Console.
+*Navigate to VPC Dashboard.
+*Click Create VPC.
+*Enter Name: My VPC.
+*Enter CIDR Block: 10.0.0.0/16.
+*Create VPC.
+Step 2: Create Public Subnet
+*Select Subnets.
+*Click Create Subnet.
+*Choose My VPC.
+*Name: Public Subnet.
+*CIDR: 10.0.1.0/24.
+*Enable Auto-assign Public IP.
+Step 3: Create Private Subnet
+*Click Create Subnet.
+*Name: Private Subnet.
+*CIDR: 10.0.2.0/24.
+*Disable Auto-assign Public IP.
+Step 4: Create Internet Gateway
+*Create Internet Gateway.
+*Name: My IGW.
+*Open EC2 Dashboard.
+*Select Launch Templates.
+*Click Create Launch Template.
+*Enter Template Name.
+*Select Amazon Linux 2 AMI.
+*Choose Instance Type (t2.micro).
+*Select Security Group.
+*Create Launch Template.
+Step 8: Launch EC2 Instance from Template
+*Select Launch Template.
+*Click Launch Instance from Templet.
+*Choose Public Subnet.
+*Launch EC2 Instance.
+Step 9: Verify Connectivity
+*Copy Public IP Address.
+*Connect using MobaXterm or SSH.
+*Verify internet access and connectivity.
+6. Security Considerations
+*Public Subnet hosts internet-facing services.
+*Private Subnet protects sensitive resources.
+Security Groups control access.
+*Route Tables manage network traffic.
+*Launch Templates ensure consistent deployment.
+7. Advantages
+*Improved Security.
+*Simplified EC2 Deployment.
+*Better Resource Management.
+*High Scalability.
+*Reduced Configuration Errors.
+8. Result
+
+A VPC with Public and Private Subnets was successfully created. EC2 instances were launched using Launch Templates. Public instances were accessible from the internet, while private resources remained isolated and secure.
+
+9. Conclusion
+
+The project successfully implemented a secure AWS network architecture using VPC, Public and Private Subnets, and EC2 Launch Templates. This architecture provides improved security, scalability, and efficient resource management suitable for enterprise cloud environment.
